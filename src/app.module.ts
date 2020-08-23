@@ -7,13 +7,13 @@ const GQLModule = GraphQLModule.forRoot({
   playground: true,
   autoSchemaFile: 'schema.gql',
 
-  /* Union types works fine without sorting */
+  /* Union types work fine without sorting */
   sortSchema: false,
 
-  /* And breaks when sorting applied */
+  /* And they break when sorting applied */
   // sortSchema: true,
 
-  /* Code below also breaks the union type */
+  /* The code below also breaks the union type */
   // transformSchema: lexicographicSortSchema,
 })
 
